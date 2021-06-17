@@ -2,7 +2,7 @@
 
 int main (void)
 {
-printf(" ");
+printf("size on c ");
 printf(" ");
 printf(" ");
 printf(" ");
