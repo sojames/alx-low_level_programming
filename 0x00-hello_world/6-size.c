@@ -1,8 +1,4 @@
 #include <stdio.h>
-
-int main (void)
-
-{
 /* int i;
 * float f;
 * char c;
@@ -10,6 +6,10 @@ int main (void)
 * long double ld;
 * long int li;
 */
+
+int main (void)
+
+{
 
 int i;
 float f;
