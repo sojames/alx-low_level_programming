@@ -1,5 +1,6 @@
 #include <stdio.h>
-/* int i;
+/** 
+* int i;
 * float f;
 * char c;
 * double d ;
