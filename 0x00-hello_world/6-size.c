@@ -1,12 +1,9 @@
 #include <stdio.h>
-/** 
-* int i;
-* float f;
-* char c;
-* double d ;
-* long double ld;
-* long int li;
-*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main (void)
 
