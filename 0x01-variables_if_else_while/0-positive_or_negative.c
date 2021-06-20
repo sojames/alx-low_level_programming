@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdlib.h>
 /**
-*  main - assigns a random number to int n everytime
 *
 * more headers goes there
 *
