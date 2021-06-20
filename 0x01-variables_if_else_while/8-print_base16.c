@@ -1,5 +1,6 @@
-#include <std.io>
+#include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - Entry point
  *
@@ -7,11 +8,10 @@
  */
 int main(void)
 {
-int z;
-
-for (z=122; z <=90; z--)
+int h;
+for (h=48; h<=57; h++)
 {
-	print(z);
+putchar(h);
 }
 putchar("\n");
 return (0);

@@ -1,11 +1,14 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+#include <stdlib.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int y;
-for (y = 48; y <+ 57 ; Y++)
+for (y = 48; y <=57 ; Y++)
 {
 putchar(y);
 }

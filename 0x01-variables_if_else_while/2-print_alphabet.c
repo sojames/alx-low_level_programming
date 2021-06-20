@@ -1,17 +1,21 @@
 #include <stdio.h>
 #include <ctype.h>
-int main()
+#include <stdlib.h>
+#include <time.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main()
 {
-char upper.lower;
-/*
-upper = getchar();
-lower = tolower(upper):
-putchar (lower);
-putchar ('\n');
-*/
-for (upper.lower=a; upper.lower<=z; upper.lower ++);
-putchar(upper.lower);
-putchar("\n");
+int lower;
+for (lower=97; lower <= 122; lower++)
+{
+    putchar(lower);
+}
+	putchar("\n");
 return (0);
 }

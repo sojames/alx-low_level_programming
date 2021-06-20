@@ -1,4 +1,4 @@
-#include <std.io>
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * main - Entry point
@@ -7,12 +7,15 @@
  */
 int main(void)
 {
-int z;
-
-for (z=122; z <=90; z--)
+int i;
+for (i=48; i<=57; i++)
 {
-	print(z);
+putchar(i);
+if (i==57)
+	break;
+putchar(',');
 }
 putchar("\n");
 return (0);
+
 }
