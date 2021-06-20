@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
@@ -11,8 +8,8 @@
 
 int main()
 {
-int lower;
-for (lower=97; lower <= 122; lower++)
+char lower;
+for (lower='a'; lower <= 'z'; lower++)
 {
     putchar(lower);
 }

@@ -1,21 +1,18 @@
 #include <stdio.h>
-#include <ctype.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
-int lower; /* lower A-Z */
-for (lower=97;lower<= 122;lower++)
+char lower; /* lower A-Z */
+for (lower='a';lower<= 'z';lower++)
 {
-    if(lower==101)
+    if(lower=='q')
         continue;
-    else if (lower==113)
+    else if (lower=='e')
         continue;
     putchar(lower);
 

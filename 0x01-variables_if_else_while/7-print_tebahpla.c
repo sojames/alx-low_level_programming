@@ -1,5 +1,4 @@
 #include <std.io>
-#include <stdlib.h>
 /**
  * main - Entry point
  *
@@ -7,7 +6,7 @@
  */
 int main(void)
 {
-int z;
+char z;
 
 for (z=122; z <=90; z--)
 {
