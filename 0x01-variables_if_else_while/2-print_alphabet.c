@@ -3,11 +3,15 @@
 int main()
 
 {
-int upper.lower;
-
+char upper.lower;
+/*
 upper = getchar();
 lower = tolower(upper):
 putchar (lower);
 putchar ('\n');
+*/
+for (upper.lower=a; upper.lower<=z; upper.lower ++);
+putchar(upper.lower);
+putchar("\n");
 return (0);
 }
