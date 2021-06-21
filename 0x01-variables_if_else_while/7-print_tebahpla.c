@@ -1,17 +1,22 @@
-#include <std.io>
+#include <stdio.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-char z;
 
-for (z=122; z <=90; z--)
 {
-	print(z);
+char letter; /*Decarling statement*/
+
+/*for z-a*/
+for (letter = 122 ; letter >= 97; letter--)
+{
+putchar(letter);
 }
-putchar("\n");
+
+putchar('\n'); /*new line*/
+
 return (0);
+
 }

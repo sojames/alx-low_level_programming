@@ -1,25 +1,27 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-char h;
-/* base 16 0-9 */
 
-for (h=48; h<=57; h++)
 {
-putchar(h);
-}
-/* base 16 a-f */
-for (h=97; h<=102; h++)
+char base_16; /*Decarling statement*/
+
+/*for base 16 0-9*/
+for (base_16 = 48; base_16 <= 57; base_16++)
 {
-putchar(h);
+putchar(base_16); /*print 0-9*/
 }
 
-putchar("\n");
+/*for base 16 a-f*/
+for (base_16 = 97 ; base_16 <= 102; base_16++)
+{
+putchar(base_16); /*print a-f*/
+}
+
+putchar ('\n'); /*print new line*/
+
 return (0);
 }

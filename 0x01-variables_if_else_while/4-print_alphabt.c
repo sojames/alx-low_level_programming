@@ -4,20 +4,25 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
-{
-char lower; /* lower A-Z */
-for (lower='a';lower<= 'z';lower++)
-{
-    if(lower=='q')
-        continue;
-    else if (lower=='e')
-        continue;
-    putchar(lower);
 
+{
+char letter; /*Decarling statement*/
+
+/*for letter*/
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+if (letter == 'q') /*continue if is q*/
+continue;
+
+else if (letter == 'e')/*continue if is q*/
+continue;
+
+putchar(letter);/*print letter*/
 }
-putchar ('\n');
+
+putchar('\n'); /*new line*/
+
 return (0);
-}
 
+}

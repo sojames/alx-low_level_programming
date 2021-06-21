@@ -5,17 +5,27 @@
  * Return: Always 0 (Success)
  */
 int main(void)
+
 {
-int i;
-/* base for 0-9 with (,)*/
-for (i=48; i<=57; i++)
+int number; /*Decarling statement*/
+
+/*for 0-9 with (,)*/
+for (number = 48; number <= 57; number++)
 {
-putchar(i);
-if (i==57)
-	break;
-putchar(',');
+putchar(number); /*print  number*/
+
+/*if the value is 9 in format ASCII break the program*/
+if (number == 57)
+{
+break;
 }
-putchar("\n");
+
+putchar(','); /*print (,)*/
+putchar (' '); /*print a space*/
+}
+
+putchar('\n');
+
 return (0);
 
 }

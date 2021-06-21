@@ -1,37 +1,47 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main header goes in here
+ * main - Entry point
  *
- * the code follow suite
- *
- * return 0 after successful execution
+ * Return: Always 0 (Success)
  */
 int main(void)
-{
-int base123;
-int base231;
-int base312;
-for (base123=48; base123 <= 57; base123++)
-{
-for (base231=49; base231 <= 57; base231++)
-{
-for (base312=50; base312 <= 57; base312++)
 
 {
-    putchar(base123);
-    putchar(base231);
-    putchar(base312);
-    if (base123==55 && base231 ==56 &&base312==57 )
-    {
-	    break;
-    }
-    putchar(',');
-    putchar(' ');
+int left; /*Decarling statement*/
+int right;
+int center;
+
+/*for 0-9 with ASCII*/
+
+for (left = 48; left <= 57; left++)
+{
+for (center = left + 1; center <= 57; center++)
+{
+for (right = center + 1 ; right <= 57; right++)
+
+{
+
+putchar(left); /*print  numbers left, center and rigth ++*/
+putchar (center);
+putchar (right);
+
+/*break program if the condition is true (if is 789=+)*/
+if ((left == 55) && (center == left + 1) && (right == center + 1))
+{
+break; /*terminate the program*/
 }
-}
-}
-    putchar("\n");
+
+putchar(','); /*print (,)*/
+putchar (' '); /*prirint a space*/
+
+} /*end for #3*/
+
+} /*end for #2*/
+
+} /*end for #1*/
+
+putchar('\n'); /*new line*/
 
 return (0);
+
 }
