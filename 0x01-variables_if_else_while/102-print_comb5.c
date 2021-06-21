@@ -1,30 +1,44 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-int base126;
-int base136;
 
-for (base126=48; base126 <= 57; base126++)
 {
-for (base136=49; base136 <= 57; base136++)
+int first_nums; /*Decarling statement*/
+int second_nums;
+
+/*for 0-9 with ASCII*/
+for (first_nums = 0; first_nums < 100 ; first_nums++)
 {
-    putchar(base126);
-    putchar(base136);
-    putchar(' ');
-    putchar(base136);
-    putchar(base126);
-    if (base126==57 && base136 ==57)
-        break;
-    putchar(',');
-}
+for (second_nums = first_nums + 1 ; second_nums < 100; second_nums++)
+{
+
+putchar (first_nums / 10 + '0'); /*print  first nums, first digit*/
+putchar (first_nums % 10 + '0'); /*print  first nums, second digit*/
+
+putchar (' '); /*prirint a space*/
+
+putchar (second_nums / 10 + '0'); /*print  sencond nums, first digit*/
+putchar (second_nums % 10 + '0'); /*print  second nums, second digit*/
+
+/*break program if the condition is true (if is 98 99)*/
+if (first_nums == 98 && second_nums == 99)
+{
+break;
 }
 
-putchar("\n");
+putchar(','); /*print (,)*/
+putchar (' '); /*prirint a space*/
+
+} /*end for #2*/
+
+} /*end for #1*/
+
+putchar('\n'); /*new line*/
+
 return (0);
+
 }

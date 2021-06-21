@@ -1,28 +1,40 @@
 #include <stdio.h>
 /**
- * main header goes here
- * content follow suite
+ * main - Entry point
  *
- * return 0 after successful execution
+ * Return: Always 0 (Success)
  */
 int main(void)
+
 {
-int front;
-int back;
-for (front=48; front<=57; front++)
+int number_left; /*Decarling statement*/
+int number_right;
+
+/*for 0-9 with ASCII*/
+
+for (number_left = 48; number_left <= 57; number_left++)
 {
-for (back=49; back<=57;back++)
+for (number_right = number_left + 1 ; number_right <= 57; number_right++)
 {
-	putchar (front);
-	putchar(back);
-	if (front ==56 && back==57)
-	{
-	break;
-	}
-		putchar(',');
-putchar(' ');
+
+putchar(number_left);
+putchar (number_right);
+
+/*break program if the condition is true (if is 99=+)*/
+if ((number_left == 56) && (number_right == 57))
+{
+break;/*terminate the program*/
 }
+
+putchar(','); /*print (,)*/
+putchar (' '); /*prirint a space*/
+
 }
-putchar ("\n");
+
+}
+
+putchar('\n'); /*new line*/
+
 return (0);
+
 }
