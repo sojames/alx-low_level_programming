@@ -8,15 +8,18 @@
  */
 int _abs(int)
 {
-int r;
+if (n < 0) /*if n is greater than zero*/
+{
+return (n * (-1));
+}
 
-r = _abs(-1);
-printf("%d\n", r);
-r = _abs(0);
-printf("%d\n", r);
-r = _abs(1);
-printf("%d\n", r);
-r = _abs(-98);
-printf("%d\n", r);
+else if (n == 0) /*if n is equal 0*/
+{
 return (0);
+}
+
+else
+{
+return (n); /*if n is positive*/
+}
 }
