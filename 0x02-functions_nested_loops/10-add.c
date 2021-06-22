@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -5,16 +6,11 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int add(int, int)
 {
-char a;
+int n;
 
-for (a = 'a'; a <= 'z'; a++)
-{
-putchar(a);
-}
-putchar("\n");
-
-
+n = add(89, 9);
+printf("%d\n", n);
 return (0);
 }
