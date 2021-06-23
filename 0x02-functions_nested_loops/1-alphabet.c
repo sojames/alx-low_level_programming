@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - check the code for ALX School students.
@@ -11,9 +11,9 @@ char a;
 
 for (a = 'a'; a <= 'z'; a++)/*function that prints the alphabet, in lowercase, followed by a new line.*/
 {
-putchar(a);
+_putchar(a);
 }
-putchar("\n");
+_putchar("\n");
 
 
 }
