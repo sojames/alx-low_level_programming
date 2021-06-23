@@ -19,7 +19,7 @@ _putchar ('0');
 return (0);
 }
 
-else
+else /* 5-sign task*/
 {
 _putchar ('-');
 return (-1);

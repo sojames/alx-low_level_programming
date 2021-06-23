@@ -12,7 +12,7 @@ if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
 {
 return (1);
 }
-
+/* 4 is aplha*/
 else
 {
 return (0);

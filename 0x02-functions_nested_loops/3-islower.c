@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int _islower(int c);
+int _islower(int c);/* proto type*/
 {
 if (c > 'a' && c < 'z')
 {
@@ -14,7 +14,7 @@ return (1);
 
 else
 {
-return (0);
+return (0); /* look 3 is lower for lower letter*/
 }
 
 }

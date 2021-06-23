@@ -20,7 +20,7 @@ _putchar(alphabet);
 } 
 
 count++;
-_putchar('\n');
+_putchar('\n'); /*added 2 line*/
 }
 
 
