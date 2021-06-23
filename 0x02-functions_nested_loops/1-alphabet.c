@@ -5,16 +5,15 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void) /* Prototype: void print_alphabet(void)*/
 {
 char a;
 
-for (a = 'a'; a <= 'z'; a++)
+for (a = 'a'; a <= 'z'; a++)/*function that prints the alphabet, in lowercase, followed by a new line.*/
 {
 putchar(a);
 }
 putchar("\n");
 
 
-return (0);
 }
