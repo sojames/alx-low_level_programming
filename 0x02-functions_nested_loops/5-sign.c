@@ -1,28 +1,30 @@
 #include "holberton.h"
 
 /**
- * main - check the code for ALX School students.
+ * print_sign - Entry point
  *
- * Return: Always 0.
+ * @n: - ascii integer value of the character
+ *
+ * Return: 1 if n>0, 0 if n==0, -1 if n<0
  */
 int print_sign(int n)
 {
-if (n > 0)
-{
-_putchar ('+');
-return (1);
-}
+	int result;
 
-else if (n == 0)
-{
-_putchar ('0');
-return (0);
+	if (n > 0)
+	{
+		result = 1;
+		_putchar(43);
+	}
+	else if (n == 0)
+	{
+		result = 0;
+		_putchar(48);
+	}
+	else
+	{
+		result = -1;
+		_putchar(45);
+	}
+return (result);
 }
-
-else /* 5-sign task*/
-{
-_putchar ('-');
-return (-1);
-}
-
-}	

@@ -1,16 +1,12 @@
 #include "holberton.h"
-#include <stdio.h>
-
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
+ * add -prints add two numbers
+ *@i: print int i
+ *@k: print int k
+ * Return: return int
  */
-int add(int, int)
-{
-int n;
 
-n = add(89, 9);
-printf("%d\n", n);
-return (0);
+int add(int i, int k)
+{
+return (i + k);
 }
