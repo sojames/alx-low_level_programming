@@ -1,18 +1,24 @@
-#include "holberton.h"
-
+#include <stdio.h>
 /**
- * main - check the code for ALX School students.
+ * main - increasing and decreasing until 98
  *
  * Return: Always 0.
  */
-void print_times_table(int n)
+
+int main(void)
 {
-print_times_table(3);
-_putchar('\n');
-print_times_table(5);
-_putchar('\n');
-print_times_table(98);
-_putchar('\n');
-print_times_table(12);
+int i, result; /Delcaring statements/
+
+i = 0;
+result = 0;
+/Start While/
+while (i < 1024)
+{
+if (i % 3 == 0 || i % 5 == 0) /Start condition IF/
+result += i;
+i++;
+} /END condition IF/
+
+printf("%d\n", result);
 return (0);
 }

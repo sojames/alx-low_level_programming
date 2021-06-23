@@ -1,17 +1,36 @@
+#include <stdio.h>
+
 /**
- * main - check the code for ALX School students.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: nothing, return void
  */
-void print_times_table(int n)
+
+int main(void)
 {
-print_times_table(3);
-_putchar('\n');
-print_times_table(5);
-_putchar('\n');
-print_times_table(98);
-_putchar('\n');
-print_times_table(12);
-return (0);
+/Declaring statements/
+long int n;
+long int num_1 = 0;
+long int num_2 = 1;
+long int nextTerm;
+
+for (n = 0; n < 50; ++n) /Start for/
+{
+nextTerm = num_1 + num_2;
+num_1 = num_2;
+num_2 = nextTerm;
+
+if (n != 49)
+{
+printf("%ld, ", nextTerm);
 }
 
+else
+{
+printf("%ld\n", nextTerm);
+}
+
+} /End for/
+
+return (0);
+}

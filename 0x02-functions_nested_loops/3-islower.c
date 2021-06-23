@@ -1,12 +1,14 @@
 #include "holberton.h"
-
 /**
- * main - check the code for ALX School students.
+ * _islower - return 0 letter not lowercase, 1 letter lowercase
  *
- * Return: Always 0.
+ * @c: The int to print
+ * Return: 0 not lowercase, 1 lowercase
  */
-int _islower(int c);/* proto type*/
+int _islower(int c)
+
 {
+
 if (c > 'a' && c < 'z')
 {
 return (1);
@@ -14,7 +16,7 @@ return (1);
 
 else
 {
-return (0); /* look 3 is lower for lower letter*/
+return (0);
 }
 
 }

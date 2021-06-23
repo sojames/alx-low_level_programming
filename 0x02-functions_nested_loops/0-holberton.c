@@ -7,14 +7,14 @@
 int main(void)
 
 {
-_putchar("H");
-_putchar("o");
-_putchar("l");
-_putchar("e");
-_putchar("r");
-_putchar("t");
-_putchar("o");
-_putchar("n");
+int i;
+char school[9] = "Holberton"; /*declare*/
+for (i = 0; i <= 9; i++) /*loop*/
+{
+_putchar(school[i]);/* hello */
+	
+}
+_putchar("\n"); /*new line*/
 return (0);
 
 }

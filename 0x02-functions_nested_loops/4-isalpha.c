@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int _isalpha(int c)
+int _isalpha(int c) /*for function _isalpha*/
 {
 
 if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
