@@ -1,22 +1,18 @@
 #include "holberton.h"
-/**
- *_puts - prints a string
- *@str: A pointer to an int that will be updated
- *
- *Return: void
- */
 
+/**
+ * _puts - prints a string
+ * @str :- pointer
+ * Return: Nothing
+ */
 void _puts(char *str)
 {
-	char *c;
-	int m;
+	int i = 0;
 
-	c = str;
-
-	for (m = 0; c[m]; m++) /*Count character by character*/
+	while (*(str + i))
 	{
-		_putchar (c[m]);
-
-	} /*End for*/
+		_putchar(*(str + i));
+		i++;
+	}
 	_putchar('\n');
 }
