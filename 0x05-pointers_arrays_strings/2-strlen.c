@@ -1,15 +1,20 @@
 #include "holberton.h"
 
 /**
- *int _strlen() prototype
- *function check and return length of string
+ *_strlen - length of a string
+ *@s: A pointer to an int that will be updated
  *
- *Return: Always return 0 after successful execution
+ *Return: void
  */
+
 int _strlen(char *s)
-{ 
-	str[] = "Holberton!";
+{
+	int i;
 
-       return(strlen(str));
-
+	i = 0;
+	while (s[i] != '\0') /*Count character of string*/
+	{
+		i++;
+	}
+	return (i);
 }

@@ -1,16 +1,17 @@
-include "holberton.h"
+#include "holberton.h"
 
 /**
- * main - check the code for ALX School students.
- * @a:updared to b
- * @b: updated to a
- * Return: void*
+ * swap_int - swap between a and b
+ *@a: A pointer to an int that will be updated
+ *@b: B pointer to an int that will be updated
+ * Return: void
  */
+
 void swap_int(int *a, int *b)
 {
-	int z; /* initializing z*/
+	int z; /*Declaring variables*/
 
-	x =*a;/* declaring the value of a*/
-	*a=*b;/* setting the value of b*/
-	*b=x;/* assigning back x*/
+	z = *a;  /*Z value a*/
+	*a = *b;  /*a value of b*/
+	*b = z; /*b value of a*/
 }
