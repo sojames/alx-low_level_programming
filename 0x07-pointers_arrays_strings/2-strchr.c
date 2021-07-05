@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-
 /**
  *Prototype: char *_strchr(char *s, char c);
  * @s: string to from
@@ -20,4 +18,9 @@ while(*s != '\0')
         }
         ++s;
 }/* end of while loop*/
+if(*s == c)
+        {
+            return(s);
+        }
 }
+
