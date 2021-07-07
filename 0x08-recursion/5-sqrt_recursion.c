@@ -3,7 +3,6 @@
 
 /**
  * mysort - function that take care of my base condition
- * _sqrt_recursion - function that return square root of a number
  * @n: integer whose square root is to be calculated
  * @i: nth rooth
  * Return: Always .
@@ -19,6 +18,13 @@ return (i);
 else
 return (-1);
 }
+
+/**
+ *_sqrt_recursion - function that return square root of a number
+ * @n: integer whose square root is to be calculated
+ * Return: Always .
+ */
+
 
 int _sqrt_recursion(int n)
 {
