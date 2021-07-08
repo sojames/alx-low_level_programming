@@ -23,7 +23,7 @@ int wildcmp(char *s1, char *s2)
 	 * if we reach the end of s1 and the char in s2 is a *
 	 * and if the next chars of s2 are *, return 1
 	 */
-	if (s1 == '\0' && *s2 == '' &&!*move(s2))
+	if (*s1 == '\0' && *s2 == '*' && !*move(s2))
 		return (1);
 
 	/**
@@ -53,7 +53,7 @@ int wildcmp(char *s1, char *s2)
 	 * add the return value of bandersnatch() to sum
 	 * convert non-zero to 1, keeps 0 at 0, return
 	 */
-	if (s2 == '')
+	if (*s2 == '*')
 	{
 		s2 = move(s2);
 		if (*s2 == '\0')
@@ -102,7 +102,7 @@ char *move(char *s2)
 	 * else return the address of
 	 * the first char past all *
 	 */
-	if (s2 == '')
+	if (*s2 == '*')
 		return (move(s2 + 1));
 	else
 		return (s2);

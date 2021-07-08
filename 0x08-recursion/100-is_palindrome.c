@@ -51,16 +51,16 @@ int _strlen_recursion(char *s)
 int is_palindrome(char *r)
 {
 
-        int i, size, add;
+int i, size, add;
 
-        i = 0;
-        add = 0;
+i = 0;
+add = 0;
 
-        size = _strlen_recursion(r);
+size = _strlen_recursion(r);
 
-        add = (size % 2 != 0) ? 2 : 1;
+add = (size % 2 != 0) ? 2 : 1;
 
-        return (evaluate(r, i, size - 1, add));
+return (evaluate(r, i, size - 1, add));
 }
 
 
