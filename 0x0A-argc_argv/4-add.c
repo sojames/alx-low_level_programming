@@ -40,6 +40,11 @@ if (function1(argv[j]))
 a = atoi(argv[j]);
 sum += a;
 }
+else
+{
+printf("Error\n");
+return (1);
+}
 }
 printf("%d\n", sum);
 
