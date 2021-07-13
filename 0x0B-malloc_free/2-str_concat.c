@@ -34,7 +34,6 @@ char *str_concat(char *s1, char *s2)
 {
 char *mem0;
 unsigned int a, b, size;
-a = b = 0;
 if (s1 == 0)
 {
 s1 = " ";
