@@ -1,61 +1,39 @@
-#include"holberton.h"
-#include <stdio.h>
+#include "holberton.h"
 #include <stdlib.h>
-
 /**
- *stringcount - function that count element in an array of chars
- *
- *@work: pointer to the array
- *
- * Return: count.
- **/
-
-int stringcount(char *work)
-{
-unsigned int i;
-i = 0;
-while (work[i] != '\0')
-{
-i++;
-}
-
-return (i);
-}
-
-/**
- *str_concat - function that concatenates two strings.
- *
- *@s1: first string
- *@s2: second string
- *Return: pointer
- **/
+* str_concat - concat 2 string
+* @s1:string1
+* @s2:string2
+* Return:char
+*/
 
 char *str_concat(char *s1, char *s2)
 {
-char *mem0;
-unsigned int a, b, size;
-if (s1 == 0)
+unsigned int i, j, k, l;
+char *s;
+
+if (s1 == NULL)
+i = 0;
+else
 {
-s1 = " ";
+for (i = 0; s1[i]; i++)
+;
 }
-if (s2 == 0)
+if (s2 == NULL)
+j = 0;
+else
 {
-s2 = " ";
+for (j = 0; s2[j]; j++)
+;
 }
-size = (stringcount(s1) + stringcount(s2) + 1);
-mem0 = (char *)malloc(size *sizeof(char));
-if (mem0 == 0)
-{
+k = i + j + 1;
+s = malloc(k *sizeof(char));
+if (s == NULL)
 return (NULL);
+for (l = 0; l < i; l++)
+s[l] = s1[l];
+for (l = 0; l < j; l++)
+s[l + i] = s2[l];
+s[i + j] = '\0';
+return (s);
 }
-for (a = 0; *(s1 + a) != '\0'; a++)
-*(mem0 + a) = *(s1 + a);
-
-for (b = 0; *(s2 + b) != '\0'; b++)
-{
-*(mem0 + a) = *(s2 + b);
-a++;
-}
-return (mem0);
-}
-
