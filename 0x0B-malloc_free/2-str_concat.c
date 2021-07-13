@@ -1,4 +1,6 @@
 #include"holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  *stringcount - function that count element in an array of chars
