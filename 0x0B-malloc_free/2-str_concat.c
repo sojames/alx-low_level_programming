@@ -43,11 +43,9 @@ size = (stringcount(s1) + stringcount(s2) + 1);
 mem0 = (char *)malloc(size *sizeof(char));
 if (mem0 == 0)
 return (NULL);
-while (*(s1 + a) != '\0')
-{
+for (a = 0; *(s1 + a) != '\0'; a++)
 *(mem0 + a) = *(s1 + a);
-a++;
-}
+
 for (b = 0; *(s2 + b) != '\0'; b++)
 {
 *(mem0 + a) = *(s2 + b);
