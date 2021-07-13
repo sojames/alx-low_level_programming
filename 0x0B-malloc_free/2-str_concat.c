@@ -36,10 +36,13 @@ char *mem0;
 unsigned int a, b, size;
 a = b = 0;
 if (s1 == 0)
+{
 s1 = " ";
+}
 if (s2 == 0)
+{
 s2 = " ";
-
+}
 size = (stringcount(s1) + stringcount(s2) + 1);
 mem0 = (char *)malloc(size *sizeof(char));
 if (mem0 == 0)
