@@ -1,6 +1,5 @@
 #include"holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
  *stringcount - function that count element in an array of chars
  *
@@ -42,7 +41,9 @@ s2 = " ";
 size = (stringcount(s1) + stringcount(s2) + 1);
 mem0 = (char *)malloc(size *sizeof(char));
 if (mem0 == 0)
+{
 return (NULL);
+}
 for (a = 0; *(s1 + a) != '\0'; a++)
 *(mem0 + a) = *(s1 + a);
 
