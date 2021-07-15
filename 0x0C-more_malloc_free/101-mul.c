@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * main - multiplies two positive numbers
  * @argc: n arguments
