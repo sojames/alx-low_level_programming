@@ -1,6 +1,11 @@
 #include"function.h"
 
-
+/**
+ * main - print opcodes of its own main function
+ * @argc: number of arguments
+ * @argv: vector of arguments
+ * Return: 0 if no errors
+ */
 
 
 int main(int argc, char *argv[])
