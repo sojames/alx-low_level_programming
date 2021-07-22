@@ -16,14 +16,11 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i;
-while (ops[i].op)
+while (i < 5)
 {
-if (strcmp(s, ops[i].op) == 0)
-{
+if (ops[i].op[0] == s[0])
 return (ops[i].f);
-}
 i++;
 }
-printf("Error\n");
-exit(99);
+return (NULL);
 }
