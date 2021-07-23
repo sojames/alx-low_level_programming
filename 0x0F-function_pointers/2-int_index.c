@@ -22,4 +22,6 @@ if (cmp(array[i]) != 0)
 }
 
 return (-1);
+
 }
+
