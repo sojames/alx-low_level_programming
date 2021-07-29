@@ -1,14 +1,14 @@
-section .data
-	msg db	"Hello, Holberton", `\n`
+#include <stdio.h>
 
-section .text
-	global main
-main:
-	mov     rax, 1
-	mov     rdi, 1
-	mov     rsi, msg
-	mov     rdx, 17
-	syscall
-	mov    rax, 60
-	mov    rdi, 0
-	syscall
+void first(void) __attribute__ ((constructor));
+
+/**
+ * first - prints a sentence before the main
+ * function is executed
+ */
+void first(void)
+{
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
+}
+

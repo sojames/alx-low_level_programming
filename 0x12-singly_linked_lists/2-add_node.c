@@ -1,37 +1,31 @@
-#include "variadic_functions.h"
+#include <stdlib.h>
+#include <string.h>
+#include "lists.h"
 
 /**
- * print_strings - prints strings
- *@separator: string to be printed between the strings
- *@n:number of strings passed to the function
- * Return: void
+ * add_node - adds a new node at the beginning of a linked list
+ * @head: double pointer to the list_t list
+ * @str: new string to add in the node
+ *
+ * Return: the address of the new element, or NULL if it fails
  */
-
-void print_strings(const char *separator, const unsigned int n, ...)
+list_t *add_node(list_t **head, const char *str)
 {
-	va_list names;
-	unsigned int i;
-	char *str;
+	list_t *new;
+	unsigned int len = 0;
 
-	va_start(names, n);
+	while (str[len])
+		len++;
 
-	for (i = 0; i < n; i++)
-	{
-		str = va_arg(names, char *);
-		if (str != NULL)
-		{
-			printf("%s", str);
-			if (i != (n - 1) && separator != NULL)
-				printf("%s", separator);
-		}
-		else
-		{
-			printf("(nil)");
-			if (i != (n - 1) && separator != NULL)
-				printf("%s", separator);
-		}
-	}
-	va_end(names);
-	printf("\n");
+	new = malloc(sizeof(list_t));
+	if (!new)
+		return (NULL);
 
+	new->str = strdup(str);
+	new->len = len;
+	new->next = (*head);
+	(*head) = new;
+
+	return (*head);
 }
+
