@@ -1,17 +1,19 @@
-#include "stddef.h"
 #include "lists.h"
-#include <stdlib.h>
-#include <stdio.h>
+
 /**
- * print_dlistint - a function that prints the number of elements in a list
- *
- * @h: The list
- * Return: Number of elements in the list
+ * dlistint_len -  count how many nodes in the list
+ * @h: head of the list
+ * Return: the number of nodes
  */
+
 size_t dlistint_len(const dlistint_t *h)
 {
-	if(h != NULL)
-		if (sizeof(h) % 4 == 0)
-		        return (sizeof(h) / 4);
-	return (0);
+	int size = 0;
+
+	while (h != NULL)
+	{
+		++size;
+		h = h->next;
+	}
+	return (size);
 }
