@@ -1,50 +1,50 @@
 /**
 * add - addition
-* @x: number
-* @y: nuber
+* @a: number
+* @b: number
 * Return: result
 */
-int add(int x, int y)
+int add(int a, int b)
 {
 return (x + y);
 }
 /**
 * sub - subtraction
-* @x: number
-* @y: nuber
+* @a: number
+* @b: number
 * Return: result
 */
-int sub(int x, int y)
+int sub(int a, int b)
 {
 return (x - y);
 }
 /**
 * mul - multiplication
-* @x: number
-* @y: nuber
+* @a: number
+* @b: number
 * Return: result
 */
-int mul(int x, int y)
+int mul(int a, int b)
 {
 return (x * y);
 }
 /**
 * div - division
-* @x: number
-* @y: nuber
+* @a: number
+* @b: number
 * Return: result
 */
-int div(int x, int y)
+int div(int a, int b)
 {
 return (x / y);
 }
 /**
 * mod - modulus
-* @x: number
-* @y: number
+* @a: number
+* @b: number
 * Return: result
 */
-int mod(int x, int y)
+int mod(int a, int b)
 {
 return (x % y);
 }
